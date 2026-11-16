@@ -1,0 +1,54 @@
+/* Moa & Nils — shared design tokens. Link this from every page. */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+SC:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+:root {
+  /* ---- Colour ---- */
+  --ink:   #4a5e48;   /* primary text, rules, monogram */
+  --paper: #faf8f0;   /* page background */
+  --card:  #f3efe2;   /* raised / alternate sections */
+  --mist:  #7c8f74;   /* secondary text, times */
+  --pine:  #2d3a2c;   /* hover / deepest green */
+  --white: #ffffff;   /* print stage */
+
+  /* ink at fixed strengths (hairlines, borders) */
+  --ink-08: rgba(74, 94, 72, .08);
+  --ink-20: rgba(74, 94, 72, .20);
+  --ink-25: rgba(74, 94, 72, .25);
+  --ink-45: rgba(74, 94, 72, .45);
+
+  /* ---- Font families ---- */
+  --font-display: 'Cormorant Garamond', Garamond, serif;  /* headlines, italics */
+  --font-caps:    'Cormorant SC', Garamond, serif;        /* labels, eyebrows (uppercase) */
+  --font-body:    'EB Garamond', Garamond, serif;         /* running text */
+  --font-mono:    ui-monospace, SFMono-Regular, Menlo, monospace; /* placeholders only */
+
+  /* ---- Font weights ---- */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* ---- Type scale ---- */
+  --text-2xs: 10px;
+  --text-xs:  11px;
+  --text-sm:  12px;
+  --text-base: 15px;
+  --text-lg:  20px;
+  --text-xl:  clamp(21px, 3vw, 27px);
+  --text-2xl: clamp(23px, 3.6vw, 32px);
+  --text-hero: clamp(38px, 7.4vw, 64px);
+
+  --leading-body: 1.7;
+  --leading-tight: 1.06;
+
+  /* ---- Letter-spacing (caps / labels) ---- */
+  --track-caps:    .24em;
+  --track-label:   .3em;
+  --track-eyebrow: .42em;
+  --track-wide:    .46em;
+
+  /* ---- Layout ---- */
+  --wrap: 940px;
+  --wrap-narrow: 620px;
+  --gutter: 28px;
+}
